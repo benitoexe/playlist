@@ -1,3 +1,5 @@
+import random
+
 songs = ["A", "B", "C", "D", "E"]
 
 #button 1 moves the first song to the end
@@ -9,7 +11,6 @@ def button2():
     songs.insert(0, songs.pop(-1))
 
 #button 3 shuffles the playlist
-import random
 def button3():
     random.shuffle(songs)
     print("Playlist shuffled!")
